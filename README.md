@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Landing Premium - Next.js + Tailwind
 
-## Getting Started
+Landing profesional moderna con diseño responsivo, modo oscuro, carrusel de portafolio y sistema de contacto integrado.
 
-First, run the development server:
+## 🎯 Stack
 
+- **Next.js 16** - React framework
+- **Tailwind CSS 4** - Utility-first CSS
+- **TypeScript** - Type safety
+- **Resend** - Email delivery
+- **next-themes** - Dark mode
+
+## 🚀 Setup Local
+
+### 1. Instala dependencias
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configura variables de entorno
+```bash
+cp .env.example .env.local
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edita `.env.local` con:
+```env
+RESEND_API_KEY=re_xxxxxxxxxxxxx
+CONTACT_TO_EMAIL=tu-email@example.com
+CONTACT_FROM_EMAIL=onboarding@resend.dev
+NEXT_PUBLIC_WHATSAPP_PHONE=+54XXXXXXXXXX  # optional
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Corre servidor local
+```bash
+npm run dev
+```
+Abre [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 🔨 Build & Deploy
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Build para producción
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start en producción
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📋 Estructura
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── page.tsx          # Home page principal
+│   ├── layout.tsx        # Layout global
+│   ├── globals.css       # Estilos globales
+│   └── api/contact/      # API route para emails
+├── components/           # Componentes reutilizables
+│   ├── ContactForm.tsx
+│   ├── PortfolioCarousel.tsx
+│   ├── Navbar.tsx
+│   └── ...
+└── types/                # Type definitions
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ 100% Responsive (mobile-first)  
+✅ Dark mode integrado  
+✅ Animaciones subtle (Apple-style)  
+✅ Carrusel infinito con scroll/click  
+✅ Formulario con validación  
+✅ Email delivery con Resend  
+✅ Chat flotante WhatsApp (opcional)  
+✅ Código limpio y escalable  
+
+## 📞 Contacto
+
+Sistema automático de emails con validación de spam (honeypot field).
