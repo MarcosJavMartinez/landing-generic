@@ -42,7 +42,11 @@ export function FloatingChat({ phoneE164 }: Props) {
         />
       )}
 
-      <div data-floating-chat-root className="fixed bottom-24 right-6 z-[9999]">
+      <div
+        data-floating-chat-root
+        className="fixed right-4 bottom-6 sm:right-6 sm:bottom-8 z-[9999]"
+        style={{ bottom: "calc(1rem + env(safe-area-inset-bottom, 0px))" }}
+      >
         {/* Panel */}
         {open && (
           <div className="mb-3 w-[320px] overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-2xl backdrop-blur dark:border-slate-800 dark:bg-slate-950/80 animate-[fadeUp_.18s_ease-out]">

@@ -370,9 +370,12 @@ Trabajamos pocos proyectos para hacerlos realmente bien.
       </section>
 
       <Footer />
+      {/* WhatsApp flotante: usar variable de entorno en Vercel, y fallback de desarrollo si falta */}
       {process.env.NEXT_PUBLIC_WHATSAPP_PHONE ? (
         <FloatingChat phoneE164={process.env.NEXT_PUBLIC_WHATSAPP_PHONE} />
-      ) : null}
+      ) : (
+        <FloatingChat phoneE164="5492613466421" />
+      )}
     </main>
   );
 }
