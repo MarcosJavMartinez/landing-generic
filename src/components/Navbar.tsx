@@ -30,7 +30,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         {/* Brand */}
         <a href="#inicio" className="text-sm font-semibold tracking-wide">
-          GEN 
+          studio gen
         </a>
 
         {/* Desktop nav */}
