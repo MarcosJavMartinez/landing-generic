@@ -1,6 +1,7 @@
 ﻿import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { PortfolioCarousel } from "@/components/PortfolioCarousel";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { FloatingChat } from "@/components/FloatingChat";
@@ -189,7 +190,7 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {FEATURES.map((f) => (
-              <div
+              <RevealOnScroll
                 key={f.title}
                 className="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm backdrop-blur transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900/60"
               >
@@ -199,7 +200,7 @@ export default function HomePage() {
                 </div>
 
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">{f.desc}</p>
-              </div>
+              </RevealOnScroll>
             ))}
           </div>
         </div>
@@ -220,9 +221,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10">
+          <RevealOnScroll className="mt-10">
             <PortfolioCarousel items={PORTFOLIO} />
-          </div>
+          </RevealOnScroll>
         </div>
       </section>
 
