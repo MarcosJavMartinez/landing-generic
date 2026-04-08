@@ -1,7 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Montserrat } from "next/font/google";
 import { ThemeToggle } from "@/components/ThemeToggle";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+});
 
 const LINKS = [
   { label: "Inicio", href: "#inicio" },
@@ -29,8 +36,11 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/80">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         {/* Brand */}
-        <a href="#inicio" className="text-sm font-semibold tracking-wide">
-          STUDIO GEN
+        <a
+          href="#inicio"
+          className={`${montserrat.className} text-sm font-bold uppercase tracking-[0.16em] text-slate-900 transition-colors duration-200 dark:text-slate-100`}
+        >
+          GEN STUDIO
         </a>
 
         {/* Desktop nav */}
