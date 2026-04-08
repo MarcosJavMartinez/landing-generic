@@ -34,10 +34,11 @@ export function Navbar() {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/80 md:sticky md:top-0"
+      className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/80"
       style={{
         WebkitBackdropFilter: "blur(12px)",
         backdropFilter: "blur(12px)",
+        position: "sticky",
         transform: "translateZ(0)", // Force hardware acceleration for iOS
       }}
     >
