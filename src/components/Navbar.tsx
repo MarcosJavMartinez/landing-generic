@@ -33,15 +33,7 @@ export function Navbar() {
   const onLinkClick = () => setOpen(false);
 
   return (
-    <header
-      className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/80"
-      style={{
-        WebkitBackdropFilter: "blur(12px)",
-        backdropFilter: "blur(12px)",
-        position: "sticky",
-        transform: "translateZ(0)", // Force hardware acceleration for iOS
-      }}
-    >
+    <header className="sticky inset-x-0 top-0 z-50 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/80">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         {/* Brand */}
         <a
