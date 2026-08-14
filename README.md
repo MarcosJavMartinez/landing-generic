@@ -2,6 +2,12 @@
 
 Landing profesional moderna con diseño responsivo, modo oscuro, carrusel de portafolio y sistema de contacto integrado.
 
+### 🌐 [Ver demo en vivo →](https://landing-generic-ten.vercel.app/)
+
+## 📸 Vista previa
+
+![Landing de GenStudio](docs/preview.jpg)
+
 ## 🎯 Stack
 
 - **Next.js 16** - React framework
