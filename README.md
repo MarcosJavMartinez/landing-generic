@@ -80,6 +80,13 @@ src/
 ✅ Chat flotante WhatsApp (opcional)  
 ✅ Código limpio y escalable  
 
+## 📌 Estado
+
+**En desarrollo activo.** La landing está funcional y desplegada, con todo lo listado en Features.
+
+- ✅ **Funciona:** diseño responsive, modo oscuro, animaciones, carrusel, formulario de contacto con Resend y chat de WhatsApp.
+- 🔧 **En camino:** convertirla en una base reutilizable — variantes de secciones, contenido configurable y más plantillas para adaptarla rápido a cada cliente.
+
 ## 📞 Contacto
 
 Sistema automático de emails con validación de spam (honeypot field).
