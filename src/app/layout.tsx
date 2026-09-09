@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Landing genérica",
-  description: "Plantilla landing reutilizable para distintos negocios",
+  title: "GenStudio",
+  description: "GenStudio — landing page para presentar tu negocio o servicio",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

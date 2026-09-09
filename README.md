@@ -1,12 +1,21 @@
-# Landing Premium - Next.js + Tailwind
+# GenStudio
 
-Landing profesional moderna con diseño responsivo, modo oscuro, carrusel de portafolio y sistema de contacto integrado.
+Landing page profesional para presentar un negocio o servicio: diseño responsivo, modo oscuro, carrusel de portafolio y sistema de contacto integrado. La demo usa "GenStudio" como marca ficticia para mostrar la plantilla en acción — la idea es adaptarla rápido a cada cliente real.
 
 ### 🌐 [Ver demo en vivo →](https://landing-generic-ten.vercel.app/)
 
 ## 📸 Vista previa
 
 ![Landing de GenStudio](docs/preview.jpg)
+
+<details>
+<summary>Más capturas: modo oscuro, quiénes somos, portfolio</summary>
+
+![Modo oscuro](docs/dark-mode.jpg)
+![Sección Quiénes somos](docs/quienes-somos.jpg)
+![Carrusel de portfolio](docs/portfolio.jpg)
+
+</details>
 
 ## 🎯 Stack
 
@@ -90,3 +99,7 @@ src/
 ## 📞 Contacto
 
 Sistema automático de emails con validación de spam (honeypot field).
+
+## 👤 Autor
+
+Desarrollado por [Marcos Martínez](https://github.com/MarcosJavMartinez).
